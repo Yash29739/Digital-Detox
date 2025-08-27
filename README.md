@@ -1,106 +1,94 @@
-# Backend Project
+# 🌱 Digital Detox
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Running the Application](#running-the-application)
-- [Running Tests](#running-tests)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
+**Digital Detox** is a productivity and wellness web app designed to help users **reduce their screen time** and build healthier digital habits.  
+It combines **surveys, smart suggestions, screen-time tracking, and educational resources** into one simple platform.
 
-## Project Overview
-This is a backend service built using Express.js. It provides RESTful APIs for handling login and signUp then surveys for detox etc. The system is designed to be efficient and supports JWT-based authentication.
+---
 
-## Features
-- User authentication (JWT)
-- CRUD operations for user, surveys, progress tracking
-- Database integration with MongoDB
+## 🎯 Why Digital Detox?
 
-## Technologies
-- **Framework**: Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT
+In today’s world, we spend most of our time on screens 📱💻.  
+While technology is powerful, **excessive usage leads to stress, reduced focus, and poor sleep**.  
 
-## Getting Started
-To get a local copy up and running, follow these simple steps:
+This project helps users **understand their screen habits** and provides **personalized ways to cut down unnecessary screen time**.
 
-### Prerequisites
-Make sure you have the following installed:
-- **Node.js** (for JavaScript/Node projects)
+---
 
-### Installation
+## ✨ Features
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/your-backend-project.git
-    cd your-backend-project
-    ```
+- 📝 **Survey System**  
+   Take a survey about your daily screen usage, apps you spend time on, and lifestyle habits.  
 
-2. **Install dependencies**:
-   - For **Node.js**:
-     ```bash
-     npm install
-     ```
+- 🤖 **Smart Suggestions**  
+   Based on your survey answers, the app gives **AI-powered recommendations** (e.g., “Set app timers”, “Take breaks every hour”, “Do outdoor activities”).  
 
-3. **Set up your database**:
-    - Make sure your database (e.g., MongoDB) is running.
-    - Create a new database.
+- ✅ **To-Do List**  
+   Plan your day with tasks, set priorities & deadlines, and track completion.  
 
-### Environment Variables
+- ⏱️ **Screen Time Tracker**  
+   - Enter your daily/weekly screen time.  
+   - View graphs for usage patterns.  
+   - Compare categories like **social media, gaming, work, entertainment**.  
 
-Create a `.env` file in the root directory with the following variables:
+- 📊 **Graphs & Analytics**  
+   Interactive charts show:  
+   - Daily/weekly/monthly screen time trends.  
+   - Category-wise usage breakdown (pie charts, bar charts).  
+   - Whether you are crossing your **screen time limit**.  
 
-```plaintext
-PORT=3500
-MONGODB_URI=(database uri)
-ACCESS_TOKEN_SECRET=(random string)
-REFRESH_TOKEN_SECRET=(random string)
-```
+- 🎥 **Resources & Education**  
+   A dedicated section with **motivational videos and articles** that explain:  
+   - Why digital detox is important.  
+   - Tips to reduce screen addiction.  
+   - Healthy alternatives to excessive screen time.  
 
-## Running the Application
+---
 
-To run the application locally, follow the instructions below based on the technology used:
+## 🛠️ Tech Stack
 
-**For Node.js:**
+- **Next.js** – Frontend framework  
+- **Tailwind CSS** – Modern styling  
+- **MongoDB** – Stores survey responses, tasks, and screen-time logs  
+- **Recharts** – Data visualization for graphs and charts  
 
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repo
 ```bash
-npm start
+git clone https://github.com/Yash29739/Digital-Detox.git
+cd Digital-Detox
 ```
 
-## API Endpoints
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
 
-Here's a list of available API endpoints:
+### 3️⃣ Run the Dev Server
+```bash
+npm run dev
+```
 
-**Authentication**
+Visit **http://localhost:3000** 🎉
 
-| Method | Endpoint | Description | Authentication |
-|---|---|---|---|
-| POST | /auth | Login a user | Yes |
-| POST | /register | Register a new user | No |
+---
 
-**Users**
+## 📊 Core Pages Overview
 
-| Method | Endpoint | Description | Authentication |
-|---|---|---|---|
-| GET | /api/users | Get all users | Yes |
-| GET | /api/users/:id | Get a user by ID | Yes |
-| PUT | /updateUser | Update a user's details | Yes |
-| DELETE | /deleteUser | Delete a user | Yes |
+- 🏠 **Home** – Quick navigation cards  
+- ℹ️ **About** – Steps to use the app  
+- 📝 **Survey & Suggestions** – Take survey → get personalized detox tips  
+- ✅ **To-Do List** – Manage daily tasks and priorities  
+- ⏱️ **Tracker** – Input and monitor screen time with graphs  
+- 🎥 **Resources** – Motivational videos & articles to stay inspired  
 
-## Contributing
+---
 
-Contributions are always welcome! Here's how you can contribute to this project:
+## 🤝 Contributing
 
-1. **Fork the Project:** Create a copy of the project on your GitHub account.
-2. **Create your Feature Branch:** Create a new branch for your specific contribution (e.g., `git checkout -b feature/AmazingFeature`).
-3. **Commit your Changes:** Save your changes and add a descriptive commit message (e.g., `git commit -m 'Add some AmazingFeature'`).
-4. **Push to the Branch:** Share your changes with the main project (e.g., `git push origin feature/AmazingFeature`).
-5. **Open a Pull Request:** Let the project maintainers know about your contribution by creating a pull request.
-
-## License
-
-This project is distributed under the MIT License. See the `LICENSE` file for more information.
+1. Fork this repo  
+2. Create a new branch (`git checkout -b feature/new-feature`)  
+3. Commit your changes (`git commit -m "Add new feature"`)  
+4. Push and open a Pull Request  
